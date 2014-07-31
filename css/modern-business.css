@@ -158,18 +158,60 @@ footer {
 }
 
 
+
 h2,h3 { /*margin-top: 0px */}
+
+.btn-default {
+  background: #333;
+  color: #DDD;
+  border: 1px solid #CCC;
+}
+
+.btn-default:hover {
+  background-color: #4b6296;
+  color: #DDD;
+}
+
+
+
+#kontakt button {
+  font-size: 18px;
+  padding: 10px;
+  width:240px;
+  margin:10px;
+  position:relative;
+  padding-left:40px;
+}
+
+#kontakt button * {
+  vertical-align: middle;
+}
+
+#kontakt button .fa {
+  font-size: 30px;
+  position: absolute;
+  left:10px;
+}
+
+#kontakt button a {
+  color: inherit !important;
+}
+
+#kontakt button a:hover {
+  text-decoration: none;
+}
 
 #impressum, #map {
   position: absolute;
   z-index: 100;
   width: 100%;
   top: -1000px;
-  background: rgba(0,0,0,0.5);
+  height: auto;
+  background: rgba(255,255,255,1);
 }
 
 #map-canvas {
-  border: 3px solid #ccc;
+  border: 1px solid #ccc;
 }
 
 .top-buffer { margin-top:20px; }

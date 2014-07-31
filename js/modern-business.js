@@ -5,8 +5,7 @@ $(".navbar-nav a").click(function(e) {
 	e.preventDefault();
 
 	var elId = $(e.currentTarget).attr("href");
-  var env = findBootstrapEnvironment();
-  var offset = (elId == "#kontakt" && env != "xs") ? 0 : $(elId).offset().top - navBarHeight;
+  var offset = $(elId).offset().top - navBarHeight;
 
   if (isOverlayVisible)
     closeOverlay();
