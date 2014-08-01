@@ -99,25 +99,22 @@ function closeOverlay() {
     }
 }
     
-
-
 // Activates the Carousel
 $('.carousel').carousel({
   interval: 12000
 })
 
 
-//Blur effect on staff images 
+//color effect on staff images 
 $(function () {
-
-  $('.staff').hover(
-      function () {
-        $(this).addClass('highlight');
-      },
-      function () {
-        $(this).removeClass('highlight');     
-      }
-  );
+    $('.staff').hover(
+        function () {
+          $(this).addClass('highlight');
+        },
+        function () {
+          $(this).removeClass('highlight');     
+        }
+    );
 });
 
 
