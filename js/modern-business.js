@@ -17,7 +17,14 @@ $(".navbar-nav a").click(function(e) {
 });
 
 $('#mapOpen').click(function (e) {
-	  var div = $('#map');
+	  var env = findBootstrapEnvironment();
+
+    if (env === "xs") {
+      window.location.href = "https://goo.gl/maps/bA3Xz";
+      return;
+    }
+
+    var div = $('#map');
 
     window.location.hash = '';
     

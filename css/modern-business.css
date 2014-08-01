@@ -163,13 +163,15 @@ h2,h3 { /*margin-top: 0px */}
 
 .btn-default {
   background: #333;
-  color: #DDD;
+  color: #FFF;
   border: 1px solid #CCC;
 }
 
-.btn-default:hover {
+.btn-default:hover,
+.btn-default:active {
   background-color: #4b6296;
-  color: #DDD;
+  color: #FFF;
+  border: 1px solid #CCC;
 }
 
 
